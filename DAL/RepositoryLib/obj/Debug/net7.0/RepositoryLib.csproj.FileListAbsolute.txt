@@ -10,3 +10,6 @@ D:\BookStore\Book-Store-Project\DAL\RepositoryLib\obj\Debug\net7.0\RepositoryLib
 D:\BookStore\Book-Store-Project\DAL\RepositoryLib\obj\Debug\net7.0\refint\RepositoryLib.dll
 D:\BookStore\Book-Store-Project\DAL\RepositoryLib\obj\Debug\net7.0\RepositoryLib.pdb
 D:\BookStore\Book-Store-Project\DAL\RepositoryLib\obj\Debug\net7.0\ref\RepositoryLib.dll
+D:\BookStore\Book-Store-Project\DAL\RepositoryLib\bin\Debug\net7.0\EntityLib.dll
+D:\BookStore\Book-Store-Project\DAL\RepositoryLib\bin\Debug\net7.0\EntityLib.pdb
+D:\BookStore\Book-Store-Project\DAL\RepositoryLib\obj\Debug\net7.0\RepositoryLib.csproj.CopyComplete

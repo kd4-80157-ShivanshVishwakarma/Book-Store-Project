@@ -16,9 +16,6 @@ D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\MongoDB.Dr
 D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
 D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\SharpCompress.dll
 D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\Snappier.dll
-D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\ZstdSharp.dll
 D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
 D:\BookStore\Book-Store-Project\WebAPIProj\BookStore\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib

@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "oN2lPFv7EmW9eZqfQPplW6pAHBbvZrSV2Ny2jpiXFRsF4jKgJ2QZZFlhEk9IGJg1d6lH6fqzx5k+58Nc0WSLGA==",
+  "dgSpecHash": "1NYBQwL5eL+p6ydQ4ocvZbIdXJ5I6fA4e0DVyylYDUcj99MxBI4MVa3DfMTyPgK+e36rwF2V2z3TyHsx5uhlVg==",
   "success": true,
   "projectFilePath": "D:\\BookStore\\Book-Store-Project\\DAL\\RepositoryLib\\RepositoryLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\mongodb.bson\\2.26.0\\mongodb.bson.2.26.0.nupkg.sha512",
