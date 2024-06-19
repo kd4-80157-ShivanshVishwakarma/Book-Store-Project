@@ -35,5 +35,24 @@ namespace BookStore.Services
             msgr.Message = "Order inserted successfully";
             return msgr;
         }
+
+        public async Task<List<Order>> GetAll()
+        {
+            return await _orderRepository.GetAllAsync(); 
+        }
+
+        public async Task<MessageResponse> UpdateByDate(DateTime date, bool status)
+        {
+            MessageResponse msgr = new MessageResponse();
+            string msg = await _orderRepository.UpdateByDateAsync(date, status);
+            if(!msg.Equals("Successful")){
+                msgr.Status = false;
+                msgr.Message = msg;
+                return msgr;
+            }
+            msgr.Status=true;
+            msgr.Message = "Order Status updated successfully";
+            return msgr;
+        }
     }
 }
