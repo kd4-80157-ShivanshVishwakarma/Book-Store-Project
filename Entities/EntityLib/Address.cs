@@ -5,10 +5,15 @@ namespace EntityLib
     public class Address
     {
         [BsonElement("country")]
-        public string country { get; set; }
+        public string Country { get; set; }
 
         [BsonElement("state")]
-        public string state { get; set; }
+        public string State { get; set; }
+
+        [BsonElement("postalCode")]
+        public string PostalCode { get; set; }
+
+
 
     }
 }

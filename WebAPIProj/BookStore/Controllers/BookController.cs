@@ -1,3 +1,4 @@
+using BookStore.DTOs;
 using BookStore.Models;
 using BookStore.Services;
 using EntityLib;
@@ -41,7 +42,7 @@ namespace BookStore.Controllers
 
         [HttpPut]
         [Route("/book/updatebyisbn/{isbn}")]
-        public async Task<IActionResult> UpdateBookByIsbn(string isbn, Book book){
+        public async Task<IActionResult> UpdateBookByIsbn(string isbn, BookDTO book){
             MessageResponse msg = await _service.UpdateByIsbn(isbn, book);
             return Ok(msg);
         }

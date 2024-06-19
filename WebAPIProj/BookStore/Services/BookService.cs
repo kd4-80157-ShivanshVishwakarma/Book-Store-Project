@@ -1,4 +1,5 @@
 using System.Collections;
+using BookStore.DTOs;
 using BookStore.Models;
 using EntityLib;
 using RepositoryLib;
@@ -42,18 +43,19 @@ namespace BookStore.Services
            return await _bookRepository.GetByAuthorAsync(author);
         }
 
-        public async Task<MessageResponse> UpdateByIsbn(string isbn,Book book)
+        public async Task<MessageResponse> UpdateByIsbn(string isbn,BookDTO book)
         {
-            MessageResponse msg = new MessageResponse();
-            bool flag = await _bookRepository.UpdateByIsbnAsync(isbn, book);
-            if(flag){
-                msg.Status = true;
-                msg.Message = "Document successfully updated";
-                return msg;
+            Book book1 = book;
+            MessageResponse msgr = new MessageResponse();
+            string msg = await _bookRepository.UpdateByIsbnAsync(isbn, book1);
+            if(!msg.Equals("Successful")){
+                msgr.Status = false;
+                msgr.Message = msg;
+                return msgr;
             }
-            msg.Status = false;
-            msg.Message = "Document not updated";
-            return msg;
+            msgr.Status=true;
+            msgr.Message = "Document updated successfully";
+            return msgr;
         }
     }
 }

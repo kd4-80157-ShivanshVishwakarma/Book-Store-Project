@@ -41,10 +41,11 @@ namespace RepositoryLib
             return _books.Find(b=> b.Authors.Any(a=> a.Equals(authr))).ToListAsync();
         }
 
-        public async Task<bool> UpdateByIsbnAsync(string isbn, Book book)
+        public async Task<string> UpdateByIsbnAsync(string isbn, Book book)
         {
             try
             {
+                string msg = "Successful";
                 var buk = Builders<Book>.Filter.Eq(bk=> bk.Isbn,isbn);
                 var updateBook = Builders<Book>.Update
                 .Set(bk=> bk.Title,book.Title)
@@ -54,11 +55,15 @@ namespace RepositoryLib
                 .Set(bk=> bk.Publisher,book.Publisher);
 
                 var res =await _books.UpdateOneAsync(buk, updateBook);
-                return res.ModifiedCount>0;
+                bool flag = res.MatchedCount>0 || res.ModifiedCount>0;
+                if(flag){
+                    return msg;
+                }
+                return "Not "+msg;
             }
             catch (Exception ex)
             {
-                return false;
+                return ex.Message;
             }
         }
     }

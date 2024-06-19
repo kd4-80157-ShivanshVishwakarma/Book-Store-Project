@@ -4,13 +4,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EntityLib
 {
-    public class Orders
+    public class Order
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string? OrderId { get; set; }
 
-        [BsonElement("custId")]
+        [BsonElement("customerId")]
         [BsonRepresentation(BsonType.ObjectId)]
         public string CustomerId { get; set; }
 
@@ -20,8 +20,8 @@ namespace EntityLib
         [BsonElement("totalAmount")]
         public int TotalAmount { get; set; }
 
-        [BsonElement("orderItems")]
-        public List<OrderItem> OrderItems { get; set; }
+        [BsonElement("orderItem")]
+        public List<OrderItem> OrderItem { get; set; }
 
 
     }

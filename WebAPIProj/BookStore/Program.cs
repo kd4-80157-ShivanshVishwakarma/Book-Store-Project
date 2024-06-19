@@ -15,7 +15,13 @@ builder.Services.AddSingleton<IMongoClient,MongoClient>(servicePr =>{
 });
 
 builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IAuthorServices, AuthorServices>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
